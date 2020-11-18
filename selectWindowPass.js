@@ -1,6 +1,7 @@
 web.init();
 web.setTimeout(6000);
 web.open('https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_target');
+const title = web.getTitle();
 
 const closeModal = '//*[@id="accept-choices"]';
 web.pause(10000);
