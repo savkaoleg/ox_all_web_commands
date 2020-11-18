@@ -1,4 +1,5 @@
 web.init();
 web.setTimeout(6000);
 web.open('wikipedia.org');
-web.waitForExist(caps.h1Strong)
+const h1Strong = '#www-wikipedia-org > div.central-textlogo > h1 > strong';
+web.waitForExist(h1Strong)

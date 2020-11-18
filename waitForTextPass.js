@@ -1,8 +1,9 @@
 web.init();
 web.setTimeout(6000);
 web.open("https://www.wikipedia.org/");
-const textElem = web.findElement(caps.h1Strong);
+const h1Strong = '#www-wikipedia-org > div.central-textlogo > h1 > strong';
+const textElem = web.findElement(h1Strong);
 
 const text = web.getText(textElem);
 
-web.waitForText(caps.h1Strong, text);
+web.waitForText(h1Strong, text);
